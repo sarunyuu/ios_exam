@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="GoalTableViewCell" rowHeight="226" id="KGk-i7-Jjw" customClass="GoalTableViewCell" customModule="DigiGoalExamimation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6WM-Qp-6sn" userLabel="Main stack view">
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="250"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-lz-AQD" userLabel="Top view">
+                                <rect key="frame" x="0.0" y="0.0" width="345" height="189"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D08-bn-Aow" userLabel="Detail stack view">
+                                        <rect key="frame" x="0.0" y="8" width="345" height="173"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3q6-VF-FNO" userLabel="Goal collection view">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="125"/>
+                                                <color key="backgroundColor" red="0.8980392157" green="0.63137254899999995" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="999" constant="185" id="ieg-fn-6df"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kFn-Xe-UIs">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                            </collectionView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFi-fI-coX" userLabel="Goal detail view">
+                                                <rect key="frame" x="0.0" y="133" width="345" height="40"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dhe-Ic-ylX" userLabel="Goal detail stack view">
+                                                        <rect key="frame" x="12" y="0.0" width="321" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0 Goals" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0d-xS-IxZ" userLabel="Goal count text">
+                                                                <rect key="frame" x="0.0" y="5.6666666666666554" width="165" height="26.333333333333329"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="lastBaseline" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Bs-LT-4Bq" userLabel="Saving stack view">
+                                                                <rect key="frame" x="175" y="0.0" width="146" height="30.666666666666668"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Saving" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWJ-8f-GI7" userLabel="All saving text">
+                                                                        <rect key="frame" x="0.0" y="11.333333333333341" width="74.333333333333329" height="19.333333333333329"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVq-jO-ysc" userLabel="All saving amount text">
+                                                                        <rect key="frame" x="84.333333333333314" y="0.0" width="19" height="33.666666666666664"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbM-LL-bQY" userLabel="All saving unit text">
+                                                                        <rect key="frame" x="113.33333333333333" y="11.333333333333341" width="32.666666666666671" height="19.333333333333329"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="NPZ-4j-l1w"/>
+                                                    <constraint firstItem="dhe-Ic-ylX" firstAttribute="top" secondItem="dFi-fI-coX" secondAttribute="top" id="dtV-jI-dpu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dhe-Ic-ylX" secondAttribute="bottom" id="iKd-pV-9uS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dhe-Ic-ylX" secondAttribute="trailing" constant="12" id="pF6-BU-pcT"/>
+                                                    <constraint firstItem="dhe-Ic-ylX" firstAttribute="leading" secondItem="dFi-fI-coX" secondAttribute="leading" constant="12" id="tJB-QV-h8v"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8980392157" green="0.63137254899999995" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="D08-bn-Aow" secondAttribute="bottom" constant="8" id="JiH-dH-5rp"/>
+                                    <constraint firstAttribute="trailing" secondItem="D08-bn-Aow" secondAttribute="trailing" id="RAe-VD-cyA"/>
+                                    <constraint firstItem="D08-bn-Aow" firstAttribute="leading" secondItem="D5z-lz-AQD" secondAttribute="leading" id="wM0-tb-bLe"/>
+                                    <constraint firstItem="D08-bn-Aow" firstAttribute="top" secondItem="D5z-lz-AQD" secondAttribute="top" constant="8" id="xgC-pt-SkT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDy-vs-khr" userLabel="Button view">
+                                <rect key="frame" x="0.0" y="189" width="345" height="61"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVG-wH-wFg" userLabel="New goal button">
+                                        <rect key="frame" x="8" y="8" width="329" height="45"/>
+                                        <color key="backgroundColor" red="0.78431372549019607" green="0.36470588235294116" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="xoB-3Y-1R4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+ New Goal" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wVG-wH-wFg" secondAttribute="trailing" constant="8" id="0ZZ-j9-U0D"/>
+                                    <constraint firstItem="wVG-wH-wFg" firstAttribute="top" secondItem="PDy-vs-khr" secondAttribute="top" constant="8" id="7kx-c1-Rue"/>
+                                    <constraint firstItem="wVG-wH-wFg" firstAttribute="leading" secondItem="PDy-vs-khr" secondAttribute="leading" constant="8" id="HVb-F5-07i"/>
+                                    <constraint firstAttribute="bottom" secondItem="wVG-wH-wFg" secondAttribute="bottom" constant="8" id="SVA-Zy-Sg8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6WM-Qp-6sn" secondAttribute="bottom" id="Bw0-XW-ABf"/>
+                    <constraint firstItem="6WM-Qp-6sn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EO8-5f-gzB"/>
+                    <constraint firstAttribute="trailing" secondItem="6WM-Qp-6sn" secondAttribute="trailing" id="RmH-Sr-vpA"/>
+                    <constraint firstItem="6WM-Qp-6sn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dGt-cw-Y5p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="allSavingAmountText" destination="yVq-jO-ysc" id="kpW-lq-CDM"/>
+                <outlet property="goalCollectionView" destination="3q6-VF-FNO" id="uDv-eQ-qZW"/>
+                <outlet property="goalCountText" destination="F0d-xS-IxZ" id="vW8-qx-hgA"/>
+                <outlet property="newGoalButton" destination="wVG-wH-wFg" id="i4h-54-x10"/>
+            </connections>
+            <point key="canvasLocation" x="263.35877862595419" y="49.295774647887328"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
